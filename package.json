@@ -3,5 +3,7 @@
     "tailwindcss": "^3.4.0"
   },
   "dependencies": {},
-  "scripts": "flask --app app run"
+  "scripts": {
+    "start": "flask --app app run"
+  }
 }
