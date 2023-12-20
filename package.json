@@ -2,5 +2,6 @@
   "devDependencies": {
     "tailwindcss": "^3.4.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": "flask --app app run"
 }
