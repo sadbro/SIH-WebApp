@@ -4,6 +4,6 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "gunicorn app:app",
+    "start": "gunicorn app:app"
   }
 }
