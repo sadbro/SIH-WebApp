@@ -5,6 +5,5 @@
   "dependencies": {},
   "scripts": {
     "start": "gunicorn app:app",
-    "build": "apt-get install gunicorn3"
   }
 }
