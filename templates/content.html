@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-row divide-x-4 divide-black">
+        <div class="flex-row border-2 rounded  border-black">
+            <div class="flex flex-row border-2 border-black">
+                <img alt="micro" class="shadow-xl rounded w-30" src={{ src_micro }} />
+                <img alt="macro" class="shadow-xl rounded w-30" src={{ src_macro }} />
+                <img alt="contour" class="shadow-xl rounded w-30" src={{ src_contour }} />
+            </div>
+            {% for key, value in content.items() %}
+                <p>{{ key }} : {{ value }}</p>
+            {% endfor %}
+            <button class="w-[120px] px-2 py-1 ml-2.5 mb-1.5 shadow-xl rounded text-white bg-blue-600 hover:text-black hover:cursor-pointer hover:bg-blue-400" onclick="window.location.href = '{{ url_for('upload_file') }}';">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>
