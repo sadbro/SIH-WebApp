@@ -4,6 +4,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "flask --app app run"
+    "start": "flask --app app run",
+    "build": "pip install flask"
   }
 }
