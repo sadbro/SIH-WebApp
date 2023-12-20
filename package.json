@@ -4,7 +4,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "flask --app app run",
-    "build": "apt install python3-flask"
+    "start": "gunicorn app:app",
+    "build": "apt-get install gunicorn3"
   }
 }
